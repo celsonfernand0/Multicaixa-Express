@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="Multicaixa_Express.View.Login.login"
+             BackgroundColor="White"
+             Title="login">
+ 
+    <StackLayout>
+
+
+
+        <StackLayout>
+
+                 <Image
+                    Source="header.png"
+                     HorizontalOptions="Start"
+                     VerticalOptions="Start"
+                    
+                      />
+
+        </StackLayout>
+
+
+        <StackLayout  HeightRequest="450" >
+
+
+
+            <Label
+                    Margin="10"
+                    HorizontalOptions="Center"
+                    FontSize="24"
+                    FontFamily="Arial"
+                    Text="ACTIVAÇÃO DO SERVIÇO "
+                    TextColor="#ff9200"
+                    Opacity="50"
+                    
+                    />
+
+            <Label
+                    HorizontalOptions="Center"
+                    Text="INSIRA OS SEUS DADOS DE ADESÃO"
+                    TextColor="Gray"
+                    />
+           
+                    
+
+
+            <HorizontalStackLayout Margin="20" Spacing="20"  HorizontalOptions="Center"  >
+                <Frame x:Name="char1"  WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                    CornerRadius="50"
+                    />
+
+                <Frame x:Name="char2" CornerRadius="50"  WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                     
+                    />
+
+                <Frame  x:Name="char3"   WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                    CornerRadius="50"
+                    />
+                <Frame  x:Name="char4"   WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                    CornerRadius="50"
+                    />
+                <Frame  x:Name="char5"   WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                    CornerRadius="50"
+                    />
+                <Frame x:Name="char6"   WidthRequest="10" HeightRequest="10" BorderColor="Transparent" BackgroundColor="Gray"
+                    CornerRadius="50"
+                    />
+            </HorizontalStackLayout>
+
+
+            <Label   HorizontalOptions="Center"
+                FontFamily="Arial"
+                TextColor="Gray">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="PIN" FontAttributes="Bold"/>
+                        <Span Text=" do Serviço"/>
+                        <Span Text="MULTICAIXA" FontAttributes="Bold"/>
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+
+            <Grid RowSpacing="10" ColumnSpacing="10" Margin="30" HorizontalOptions="Center"
+                 
+                
+                >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+
+
+                </Grid.ColumnDefinitions>
+
+
+                <Button FontSize="25" FontFamily="Arial" Text="1" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5"  WidthRequest="55" HeightRequest="55" Grid.Row="0" Grid.Column="0"
+                        Clicked="Click_char"
+                        />
+
+                <Button FontSize="25" FontFamily="Arial" Text="2" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="0" Grid.Column="1"
+                       Clicked="Click_char"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="3" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="0" Grid.Column="2"
+                        Clicked="Click_char"
+                        />
+
+                <Button FontSize="25" FontFamily="Arial" Text="4" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="1" Grid.Column="0"
+                         Clicked="Click_char"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="5" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="1" Grid.Column="1"
+                         Clicked="Click_char"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="6" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="1" Grid.Column="2"
+                         Clicked="Click_char"
+                        />
+
+                <Button FontSize="25" FontFamily="Arial" Text="7" TextColor="Grey"  BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="2" Grid.Column="0"
+                         Clicked="Click_char"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="8" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5"  WidthRequest="55" HeightRequest="55" Grid.Row="2" Grid.Column="1"
+                         Clicked="Click_char"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="9" TextColor="Grey" BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="2" Grid.Column="2"
+                         Clicked="Click_char"
+                        />
+
+                <Button FontSize="15" FontFamily="Arial" Text="DEL" TextColor="Grey"  BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="3" Grid.Column="0" 
+                        Clicked="Click_Del"
+                        />
+                <Button FontSize="25" FontFamily="Arial" Text="0" TextColor="Grey"  Clicked="Click_char"   BackgroundColor="White" BorderColor="Black" BorderWidth="0.5" WidthRequest="55" HeightRequest="55" Grid.Row="3" Grid.Column="1"/>
+
+
+            </Grid>
+          
+        </StackLayout>
+        <Line BackgroundColor="Gray" WidthRequest="300" HeightRequest="0.5"
+                   
+                    />
+        <ScrollView  VerticalOptions="Start" Margin="-10">
+
+            <StackLayout Margin="10" Orientation="Vertical" >
+
+               
+                <Label Text="APOIO A0 CLIENTE" FontSize="20" TextColor="#ff9200"
+                       FontAttributes="Bold"
+                       FontFamily="Arail"
+                       VerticalOptions="Start"
+                       Margin="10"
+                       HorizontalOptions="Center"
+                       />
+                <Label Text="Linha de Atendimento 24H" FontSize="14" TextColor="#000"
+                       FontAttributes="Bold"
+                       FontFamily="Arail"
+                       VerticalOptions="Start"
+                       Margin="10"
+                       HorizontalOptions="Center"
+                       />
+               
+                        <Label Text="(+244) 222 614 840 | 923 168 840" FontSize="12" TextColor="#000"
+                               FontFamily="Arail"
+                               HorizontalOptions="Center"
+                           HeightRequest="15"
+                          />
+                        <Image Source="icon_c.png" HeightRequest="15" HorizontalOptions="Start" TranslationY="-15" TranslationX="80" />
+          
+                <Label Text="suporte.mcxexpress@emis.co.ao" FontSize="12" TextColor="#000"
+                       FontFamily="Arail"
+                       VerticalOptions="Start"
+                       Margin="0"
+                       HorizontalOptions="Center"
+                       />
+                <Image Source="icon_i.png" HeightRequest="15" HorizontalOptions="Start" TranslationY="-15" TranslationX="80" />
+               
+                            <Label Text="Precisa de ajuda ?" FontSize="15" TextColor="#000"
+                       FontFamily="Arail"
+                       FontAttributes="Bold"
+                       VerticalOptions="Start"
+                       Margin="10"
+                       HorizontalOptions="Center"
+                       />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+    
+</ContentPage>

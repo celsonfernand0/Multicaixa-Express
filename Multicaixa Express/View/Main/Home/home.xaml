@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Multicaixa_Express.View.Main.Home.home"
+             NavigationPage.HasNavigationBar="False"
+             Title="home">
+    <StackLayout BackgroundColor="White"  >
+
+        <StackLayout >
+
+            <Image Source="header2.png"
+                   VerticalOptions="Start"
+                   Margin="14"
+                   WidthRequest ="200"
+                   Scale="2"
+                    
+               />
+
+        </StackLayout>
+
+        <StackLayout  VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Orientation="Vertical"
+                      BackgroundColor="Transparent"
+                    
+                      >
+            <Label Text="Cartões" FontSize="25"
+                   TextColor="#ff9200"
+                   Margin="10"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   
+                   />
+
+
+            <Image Source="cartaobfa.png"
+                   Aspect="AspectFit"
+                   WidthRequest="300"
+                   BackgroundColor="Transparent"
+                 
+                   
+                   />
+            <Label Text="Usuário" TextColor="Gray" FontSize="30" FontFamily="Arial" 
+                       Grid.RowSpan="2" Grid.ColumnSpan="3" Grid.Row="0"
+                       Grid.Column="0"
+                    HorizontalOptions="Center"
+                     
+                       />
+
+
+        </StackLayout>
+
+
+
+        <ScrollView WidthRequest="400" HeightRequest="230" Orientation="Vertical" BackgroundColor="Transparent" Margin="5">
+            <Grid HorizontalOptions="CenterAndExpand"  ColumnSpacing="7" RowSpacing="7" Margin="10" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="auto"  />
+                    <RowDefinition  Height="auto"/>
+                    <RowDefinition  Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions   >
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Border
+                       x:Name="pagamentos"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                         BackgroundColor="White"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+
+
+                    <ImageButton
+                            WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                          Source="pagamentos.png"
+                           Pressed="Click_Pagamentos"
+                             />
+
+
+
+                </Border>
+                <Label Text="Pagamentos" TextColor="Gray" Grid.Column="0" Grid.Row="1"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-5"
+                       FontSize="13"
+                       />
+
+
+                <Border
+                       x:Name="transferencias"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                        Grid.Row="1"
+                          BackgroundColor="White"
+                        Grid.Column="1"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+
+                    <ImageButton
+                               WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                            Pressed="Click_Trasnferencias"
+                            VerticalOptions="Center"
+                           Source="transferencias.png"
+                             />
+
+                </Border>
+                <Label Text="Transferencias" TextColor="Gray" Grid.Column="1" Grid.Row="1"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-5"
+                         FontSize="13"
+                       />
+
+
+                <Border
+                       x:Name="levantamentos"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                        Grid.Row="1"
+                          BackgroundColor="White"
+                        Grid.Column="2"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+                    <ImageButton
+                            WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                        Pressed="Click_Levantamentos"
+                         Source="levantamento_sem_cartao.png"
+                             />
+
+
+                </Border>
+                <Label Text="Levantamentos" TextColor="Gray" Grid.Column="2" Grid.Row="1"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-5"
+                         FontSize="12"
+                       />
+
+
+                <Border
+                       x:Name="Consultas"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                        Grid.Row="2"
+                          BackgroundColor="White"
+                        Grid.Column="0"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+                    <ImageButton
+                            WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                        Pressed="Click_Consultas"
+                              Source="consultas.png"
+                           />
+
+                </Border>
+                <Label Text="Consultas" TextColor="Gray" Grid.Column="0" Grid.Row="2"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-5"
+                         FontSize="13"
+                       />
+
+
+                <Border
+                       x:Name="Comprar_em_curso"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                        
+                        Grid.Row="2"
+                          BackgroundColor="White"
+                        Grid.Column="1"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+                    <ImageButton
+                            WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                        Pressed="Click_Compras_em_curso"
+                              Source="compras_em_curso.png"
+                             TranslationY="-5"
+                           />
+
+                </Border>
+                <Label Text="Comprar" TextColor="Gray" Grid.Column="1" Grid.Row="2"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-20"
+                         FontSize="12"
+                      />
+                <Label Text=" em "  TextColor="Gray" Grid.Column="1" Grid.Row="2"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-10"
+                         FontSize="12"
+                      />
+                <Label Text=" curso" TextColor="Gray" Grid.Column="1" Grid.Row="2"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="0"
+                         FontSize="12"
+                      />
+
+
+                <Border
+                       x:Name="Compras"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Stroke="#000"
+                        
+                        Grid.Row="2"
+                          BackgroundColor="White"
+                        Grid.Column="2"
+                        StrokeShape="RoundRectangle 10"
+                        
+                        >
+                    <ImageButton
+                            WidthRequest="60"
+                            HeightRequest="60"
+                           HorizontalOptions="Center"
+                        Pressed="Click_Compras"
+                            VerticalOptions="Center"
+                              Source="compras.png"
+                           />
+
+                </Border>
+                <Label Text=" Compras" TextColor="Gray" Grid.Column="2" Grid.Row="2"
+                       HorizontalOptions="Center" VerticalOptions="End"
+                       TranslationY="-5"
+                         FontSize="12"
+                      />
+
+
+
+
+            </Grid>
+        </ScrollView>
+
+
+
+
+
+
+    </StackLayout>
+</ContentPage>
